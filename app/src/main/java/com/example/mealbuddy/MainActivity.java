@@ -18,6 +18,7 @@ TextView textCounter;
 //yogabbagabba
         counter = 5;
 //hello world im dumb
+        //testing my branch
         butt=findViewById(R.id.butt);
         textCounter = findViewById(R.id.textView);
 
