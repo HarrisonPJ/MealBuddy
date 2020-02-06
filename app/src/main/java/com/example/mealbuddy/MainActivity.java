@@ -16,7 +16,7 @@ TextView textCounter;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 //yogabbagabba
-        counter = 0;
+        counter = 5;
 
         butt=findViewById(R.id.butt);
         textCounter = findViewById(R.id.textView);
