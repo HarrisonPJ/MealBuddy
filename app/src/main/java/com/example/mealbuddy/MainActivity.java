@@ -2,6 +2,7 @@ package com.example.mealbuddy;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,21 +12,22 @@ public class MainActivity extends AppCompatActivity {
 Button butt;
 int counter;
 TextView textCounter;
+Intent intent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//yogabbagabba
         counter = 5;
-//hello world im dumb
-        butt=findViewById(R.id.butt);
+        butt=findViewById(R.id.button);
         textCounter = findViewById(R.id.textView);
 
+        intent = new Intent(this, outfit.class);
         butt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                counter++;
-                textCounter.setText(counter);
+
+
+                startActivity(intent);
             }
         });
 
