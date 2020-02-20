@@ -1,22 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.mealbuddy">
 
-    <application
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".outfit"></activity>
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme"
+            tools:ignore="GoogleAppIndexingWarning">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-    </application>
+                <activity android:name=".afterEvent.reporting.backToMain" />
+                <activity android:name=".afterEvent.reporting.thanksForNotfiying" />
+                <activity android:name=".afterEvent.reporting.didntShow" />
+                <activity android:name=".afterEvent.reporting.mainReportPage" />
+                <activity android:name=".afterEvent.reviewBuddy.badMeal" />
+                <activity android:name=".afterEvent.reviewBuddy.alrightMeal" />
+                <activity android:name=".afterEvent.reviewBuddy.veryGoodMeal" />
+                <activity android:name=".afterEvent.overallReviewPage" />
+                <activity android:name=".duringEvent.finalDescription" />
+                <activity android:name=".duringEvent.cancelation.meCancelled" />
+                <activity android:name=".duringEvent.cancelation.meCancelling" />
+                <activity android:name=".duringEvent.cancelation.buddyCancelled" />
+                <activity android:name=".duringEvent.matching.noMatchFound" />
+                <activity android:name=".duringEvent.matching.matchFound" />
+                <activity android:name=".duringEvent.matching.findingBuddy" />
+                <activity android:name=".mainPage.findAMealBuddy.requestSubmit" />
+                <activity android:name=".mainPage.findAMealBuddy.location" />
+                <activity android:name=".mainPage.findAMealBuddy.time" />
+                <activity android:name=".mainPage.findAMealBuddy.outfit" />
+                <activity android:name=".mainPage.mealHistory.mealHistory" />
+                <activity android:name=".mainPage.settings.settingsPage" />
+                <activity android:name=".mainPage.settings.aboutPage" />
+                <activity android:name=".mainPage.mainPage" />
+                <activity android:name=".userAuth.emailAuth" />
+                <activity android:name=".userAuth.ProfilePage" />
+                <activity android:name=".userAuth.SignUp" />
+                <activity android:name=".userAuth.LoginPage" />
+
+                <activity android:name=".MainActivity">
+                        <intent-filter>
+                                <action android:name="android.intent.action.MAIN" />
+
+                                <category android:name="android.intent.category.LAUNCHER" />
+                        </intent-filter>
+                </activity>
+        </application>
 
 </manifest>

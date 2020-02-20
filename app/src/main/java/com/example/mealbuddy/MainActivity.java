@@ -9,14 +9,17 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+
 Button butt;
 int counter;
 TextView textCounter;
 Intent intent;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         counter = 5;
         butt=findViewById(R.id.button);
         textCounter = findViewById(R.id.textView);
