@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.example.mealbuddy.R;
+
 public class findingBuddy extends AppCompatActivity {
 
     @Override
@@ -12,3 +14,4 @@ public class findingBuddy extends AppCompatActivity {
         setContentView(R.layout.activity_finding_buddy);
     }
 }
+  
