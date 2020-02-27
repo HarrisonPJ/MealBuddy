@@ -13,5 +13,15 @@ public class findingBuddy extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_finding_buddy);
     }
+
+
+
+
+
+
+
+
+
+
+
 }
-  
